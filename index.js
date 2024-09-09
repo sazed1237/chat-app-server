@@ -25,10 +25,11 @@ app.use(cookieParser())
 app.use('/api', router)
 
 
-// app.options('*', cors({
-//     origin: 'http://localhost:5173',
-//     credentials: true
-// }));
+app.options('*', cors({
+    origin: [process.env.FRONTEND_URL_PRODUCTION || "http://localhost:5173"],
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 
 
 // api

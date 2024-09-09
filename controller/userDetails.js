@@ -1,4 +1,4 @@
-const getUserDetailsFromToken = require("../helpers/getUserDetailsFromToken")
+const getUserDetailsFromToken = require("../helpers/getUserDetailsFromToken") 
 
 const userDetails = async (req, res) => {
     try {
