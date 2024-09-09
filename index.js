@@ -24,10 +24,10 @@ app.use(cookieParser())
 app.use('/api', router)
 
 
-app.options('*', cors({
-    origin: 'http://localhost:5173',
-    credentials: true
-}));
+// app.options('*', cors({
+//     origin: 'http://localhost:5173',
+//     credentials: true
+// }));
 
 
 // api
